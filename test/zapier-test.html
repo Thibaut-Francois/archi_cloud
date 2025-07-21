@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test Zapier Webhook</title>
+</head>
+<body>
+  <h1>Test Zapier Webhook</h1>
+  <div id="result">En cours…</div>
+
+  <script>
+    const webhookUrl = 'https://hooks.zapier.com/hooks/catch/13685321/u27j8bo/';
+
+    async function testZapierWebhook() {
+      const payload = {
+        message: 'Test depuis HTML JS',
+        timestamp: new Date().toISOString()
+      };
+
+      try {
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          document.getElementById('result').innerText = '✅ Webhook envoyé avec succès (status 200)';
+        } else {
+          document.getElementById('result').innerText = `❌ Échec. Statut: ${response.status}`;
+        }
+      } catch (error) {
+        document.getElementById('result').innerText = `❌ Erreur : ${error.message}`;
+      }
+    }
+
+    testZapierWebhook();
+  </script>
+</body>
+</html>

@@ -1,1 +1,9 @@
-{}
+{
+  "function": {
+    "projetarchi786589c4": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}

@@ -11,5 +11,23 @@
       "StackId": "arn:aws:cloudformation:eu-west-1:848938735743:stack/amplify-projetarchi-dev-e68ad/4aed7790-660d-11f0-9f9b-02c73b8b5289",
       "AmplifyAppId": "d3uw8o7njdvfrq"
     }
+  },
+  "thib": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-projetarchi-thib-d7065-authRole",
+      "UnauthRoleArn": "arn:aws:iam::848938735743:role/amplify-projetarchi-thib-d7065-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::848938735743:role/amplify-projetarchi-thib-d7065-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-projetarchi-thib-d7065-deployment",
+      "UnauthRoleName": "amplify-projetarchi-thib-d7065-unauthRole",
+      "StackName": "amplify-projetarchi-thib-d7065",
+      "StackId": "arn:aws:cloudformation:eu-west-1:848938735743:stack/amplify-projetarchi-thib-d7065/b54acb10-662b-11f0-a5cf-0a146d4b3d9f",
+      "AmplifyAppId": "d3uw8o7njdvfrq"
+    },
+    "categories": {
+      "function": {
+        "projetarchi786589c4": {}
+      }
+    }
   }
 }
